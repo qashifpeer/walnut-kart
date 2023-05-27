@@ -1,0 +1,62 @@
+
+
+.responsive-grid{
+    /* background-color: black; */
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr;
+   
+    
+}
+.card-container{
+    padding: 0.5rem 1rem;
+    /* background-color: pink; */
+    margin: 1rem 1rem;
+    width: 220px;
+   
+    align-self: center;
+    border: 1px solid black;
+    border-radius: 1.5rem;
+   
+}
+.card-info{
+    /* background-color: aqua; */
+}
+.card-info .card-category-name, .card-title-header{
+    margin: 0.1rem;
+}
+.card-category-name{
+    font-size: 0.8rem;
+    color: rgb(207, 207, 198);
+    font-weight: 400;
+    
+    
+}
+
+.card-title-header{
+     font-size: 0.95rem;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    text-transform: capitalize;
+}
+
+.price{
+    display:flex;
+}
+.price .disc-price{
+    font-size: 0.95rem;
+    
+}
+.price .actual-price{
+    font-size: 0.95rem;
+    padding: 0 0.5rem;
+    text-decoration: line-through;
+    color: gray;
+}
+.btn{
+    /* margin: 7px 5px; */
+    padding: 0.6rem 1.5rem;
+    border-radius: 0 0 1.5rem 1.5rem ;
+    width: 100%;
+    background-color: #2A43A7;
+}

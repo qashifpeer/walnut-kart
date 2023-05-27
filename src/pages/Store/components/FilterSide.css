@@ -1,0 +1,42 @@
+.filter-container{
+    margin: 1rem 1rem;
+    display: flex;
+    flex-direction: column;
+    /* height: 100%; */
+    border-right: 1px solid var(--lightGrey);
+    
+    left: 0;
+    overflow-y: auto;
+    z-index: 5;
+    /* background-color: var(--lynxWhite); */
+    padding-bottom: 80px;
+}
+.filter-clear{
+    display: flex;
+    justify-content: space-between;
+}
+.filter-clear p{
+    text-decoration: underline;
+}
+.filter-clear p:hover{
+    color: gray;
+    cursor: pointer;
+}
+/* datalist {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    writing-mode: vertical-lr;
+    width: 200px;
+  } */
+
+  .filter-category{
+    display:flex;
+    flex-direction: column;
+  }
+  .filter-sort-by{
+    display:flex;
+    flex-direction: column;
+    width: 100%;
+   
+  }

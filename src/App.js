@@ -14,6 +14,7 @@ import Store from "./pages/Store/Store";
 
 import RequiresAuth from "./pages/Auth/RequiresAuth";
 import  {AuthContext}  from "./contexts/AuthContexts/AuthContext";
+import ProductDetail from "./pages/Store/components/ProductDetail";
 
 
 function App() {
@@ -30,6 +31,8 @@ function App() {
         <Route path="/login" element={<Login />} />
         <Route path="/mockman" element={<Mockman />} />
         <Route path="/store" element={<Store />} />
+        <Route path="/productdetail/:id" element={<ProductDetail />} />
+
         <Route
           path="/cart"
           element={
