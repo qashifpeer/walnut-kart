@@ -29,6 +29,7 @@ export const products = [
     author: "Shiv Khera",
     price: "13500",
     categoryName: "lounge",
+    // featured: true,
   },
   {
     _id: uuid(),
@@ -45,6 +46,7 @@ export const products = [
     author: "Shiv Khera",
     price: "10000",
     categoryName: "office",
+    featured: true,
   },
   {
     _id: uuid(),
@@ -77,6 +79,7 @@ export const products = [
     author: "Shiv Khera",
     price: "1700",
     categoryName: "bedroom",
+    featured: true,
   },
   {
     _id: uuid(),
@@ -93,6 +96,7 @@ export const products = [
     author: "Shiv Khera",
     price: "2000",
     categoryName: "dining",
+    featured: true,
   },
   {
     _id: uuid(),

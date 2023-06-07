@@ -1,11 +1,13 @@
 import React, { useContext } from "react";
 import "./store.css";
-import { ProductContext } from "../../contexts/AuthContexts/ProductContext";
+import { ProductContext, useProductContext } from "../../contexts/ProductContext";
 import ProductCard from "./components/ProductCard";
 import FilterSide from "./components/FilterSide";
 
 const Store = () => {
-  const { products, isLoading } = useContext(ProductContext);
+  // const { products, isLoading } = useContext(ProductContext);
+  const { products, isLoading } = useProductContext()
+  
   
 
 

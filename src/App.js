@@ -15,6 +15,10 @@ import Store from "./pages/Store/Store";
 import RequiresAuth from "./pages/Auth/RequiresAuth";
 import  {AuthContext}  from "./contexts/AuthContexts/AuthContext";
 import ProductDetail from "./pages/Store/components/ProductDetail";
+import Header from "./components/header/Header";
+import Footer from "./components/footer/Footer";
+import ErrorPage from "./pages/Error/ErrorPage";
+import SingleProduct from "./pages/Home/components/SingleProduct";
 
 
 function App() {
@@ -22,7 +26,7 @@ function App() {
 
   return (
     <div className="App">
-      <Navbar />
+      <Header />
      
      {/* <button onClick={handleLogin}>{isLoggedIn ? "signout" : "login"  } </button> */}
     
@@ -31,14 +35,15 @@ function App() {
         <Route path="/login" element={<Login />} />
         <Route path="/mockman" element={<Mockman />} />
         <Route path="/store" element={<Store />} />
-        <Route path="/productdetail/:id" element={<ProductDetail />} />
+        {/* <Route path="/productdetail/:id" element={<ProductDetail />} /> */}
+        <Route path="/singleproduct/:id" element={<SingleProduct />} />
+        <Route path="*" element={<ErrorPage />} />
 
         <Route
           path="/cart"
           element={
             <RequiresAuth>
               <Cart />
-            
             </RequiresAuth>
           }
         />
@@ -47,14 +52,13 @@ function App() {
           element={
             <RequiresAuth >
                 <WishList  />
-              
-            
             </RequiresAuth>
           }
         />
         
                
       </Routes>
+      <Footer />
     </div>
   );
 }

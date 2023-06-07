@@ -8,4 +8,46 @@ body {
     margin: 0;
     color: var(--font-primary);
     font-family:  Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    
 }
+.container{
+    max-width: 120rem;
+    margin: 0 4rem;
+}
+.grid{
+    display: grid;
+    gap: 9rem;
+}
+.grid-2-cols{
+    grid-template-columns: repeat(2, 1fr);
+}
+.grid-three-cols{
+    grid-template-columns: repeat(3,1fr);
+}
+.grid-four-col{
+    grid-template-columns: repeat(4,1fr);
+}
+ .btn{
+    padding: 1rem 2rem;
+    border: 1px solid black;
+    border-radius: 0.8rem;
+    cursor: pointer;
+    margin: 1rem 0;
+    transition: all 0.3s ease;
+    -webkit-transition: al 0.3s ease 0s ;
+    -moz-transition: all 0.3s ease 0s ;
+    -o-transition: all 0.3s ease 0s;
+    text-transform: uppercase;
+
+    &:hover,
+    &:active{
+        box-shadow: 0 2rem 2rem 0 rgb(132, 144, 255 /30%);
+        transform: scale(0.96);
+    }
+    
+}
+a{
+    text-decoration: none;
+    /* color: rgb(255 255  255); */
+    /* font-size: 1.8rem; */
+} 

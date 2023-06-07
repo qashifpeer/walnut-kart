@@ -6,7 +6,10 @@ import { makeServer } from "./server";
 import { BrowserRouter } from "react-router-dom";
 
 import AuthContextProvider from "./contexts/AuthContexts/AuthContext";
-import ProductContextProvider from "./contexts/AuthContexts/ProductContext";
+import ProductContextProvider from "./contexts/ProductContext";
+import CartContextProvider from "./contexts/CartContext";
+import WishListContextProvider from "./contexts/WishListContext";
+import FilterContextProvider from "./contexts/FilterContext";
 
 // Call make Server
 makeServer();
@@ -17,12 +20,17 @@ const root = createRoot(rootElement);
 root.render(
   <React.StrictMode>
     <BrowserRouter>
-    <AuthContextProvider>
-    <ProductContextProvider>
-       <App />
-       </ProductContextProvider>
-    </AuthContextProvider>
+      <AuthContextProvider>
+        <ProductContextProvider>
+          <FilterContextProvider>
+            <CartContextProvider>
+              <WishListContextProvider>
+                <App />
+              </WishListContextProvider>
+            </CartContextProvider>
+          </FilterContextProvider>
+        </ProductContextProvider>
+      </AuthContextProvider>
     </BrowserRouter>
-  </React.StrictMode>,
-  
+  </React.StrictMode>
 );

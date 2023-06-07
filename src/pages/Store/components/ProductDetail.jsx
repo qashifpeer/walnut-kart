@@ -1,31 +1,29 @@
 import React, { useContext, useEffect, useState } from "react";
 import "./productDetail.css"
 import { useParams } from "react-router-dom";
-import { ProductContext } from "../../../contexts/AuthContexts/ProductContext";
+import { ProductContext } from "../../../contexts/ProductContext";
 import FormatPrice from "../../../helpers/FormatPrice";
 
-const API = "/api/products";
+
 const ProductDetail = () => {
-  const [productState, setProductState]= useState()
+  // const [productState, setProductState]= useState()
   const {  products,isLoading } =  useContext(ProductContext);
   
   const { id } = useParams();
 
-  // const filteredProduct = products.find(product=> product.id=== id)
+  const filteredProduct = products.find(product=> product.id=== id)
   
 
-  // if(isLoading){
-  //   return (
-  //     <div>Loading</div>
-  //   )
-  // }
-  useEffect(()=>{
-    setProductState(products.find(({_id})=> _id=== id))
-  },[products, id ] )
+  if(isLoading){
+    return (
+      <div>Loading</div>
+    )
+  }
+ 
 
-  console.log("productState",productState)
-  const {image,title,price,categoryName} =productState;
-  return <div className="container">
+
+  const {image,title,price,categoryName} =filteredProduct;
+  return <div className="product-detail-container">
     <div className="image-container">
         <img className="product-image" src={image} alt="{title}" style={{width:"80%", height : "350px" }}  />
     </div>

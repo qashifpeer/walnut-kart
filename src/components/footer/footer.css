@@ -1,0 +1,15 @@
+.footer-subscribe{
+    display: flex;
+    flex-direction: column;
+}
+.footer-subscribe form{
+    display: flex;
+    flex-direction: column;
+}
+.footer-social--icons{
+    display: flex;
+}
+.footer-container{
+    margin: 4rem 4rem;
+    display:flex
+}
