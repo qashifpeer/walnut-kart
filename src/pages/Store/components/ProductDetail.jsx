@@ -3,6 +3,7 @@ import "./productDetail.css"
 import { useParams } from "react-router-dom";
 import { ProductContext } from "../../../contexts/ProductContext";
 import FormatPrice from "../../../helpers/FormatPrice";
+import Stars from "./Stars";
 
 
 const ProductDetail = () => {
@@ -22,7 +23,7 @@ const ProductDetail = () => {
  
 
 
-  const {image,title,price,categoryName} =filteredProduct;
+  const {image,title,price,categoryName,stars} =filteredProduct;
   return <div className="product-detail-container">
     <div className="image-container">
         <img className="product-image" src={image} alt="{title}" style={{width:"80%", height : "350px" }}  />
@@ -30,6 +31,7 @@ const ProductDetail = () => {
     <div className="info-container">
         <div className="upper-info-container">
         <h1 className="image-info-title">{title}</h1>
+        <Stars  stars={stars}/>
         <h3 className="image-info-category">{categoryName}</h3>
         <h3 className="image-info-price">{<FormatPrice price={price} />}<del> {<FormatPrice price={Number(price+1000)}/>}</del></h3>
         </div>

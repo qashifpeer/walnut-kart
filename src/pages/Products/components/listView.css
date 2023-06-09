@@ -1,0 +1,26 @@
+.product-wrapper{
+    display: flex;
+    background-color: #faf6f6;
+    margin: 3px;
+}
+
+.image-wrapper{
+    width: 200px;
+    justify-content: end;
+
+}
+.product-title{
+    text-transform: capitalize;
+    margin: 0.5rem 0;
+}
+
+
+.card-data{
+
+    justify-content: start;
+    align-content: center;
+}
+.product-price{
+    font-weight: 600;
+    padding: 0.5rem 0;
+}

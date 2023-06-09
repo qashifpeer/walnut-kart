@@ -1,0 +1,12 @@
+.sort-section{
+    display: flex;
+    justify-content: space-between;margin: 0    4rem;
+}
+.sort-btn{
+    padding: 0.8rem;
+    margin-left: 1rem;
+}
+.active{
+background-color: black;
+color: #fff;
+}

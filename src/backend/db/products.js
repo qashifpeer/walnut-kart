@@ -13,6 +13,7 @@ export const products = [
     author: "Shiv Khera",
     price: "50000",
     categoryName: "bedroom",
+    stars: 2,
   },
   {
     _id: uuid(),
@@ -21,6 +22,7 @@ export const products = [
     author: "Junaid Qureshi",
     price: "3000",
     categoryName: "lounge",
+    stars: 2.9,
   },
   {
     _id: uuid(),
@@ -29,7 +31,7 @@ export const products = [
     author: "Shiv Khera",
     price: "13500",
     categoryName: "lounge",
-    // featured: true,
+    stars: 2.5,
   },
   {
     _id: uuid(),
@@ -38,6 +40,7 @@ export const products = [
     author: "Shiv Khera",
     price: "19000",
     categoryName: "dining",
+    stars: 4.5,
   },
   {
     _id: uuid(),
@@ -46,6 +49,7 @@ export const products = [
     author: "Shiv Khera",
     price: "10000",
     categoryName: "office",
+    stars: 3.5,
     featured: true,
   },
   {
@@ -55,6 +59,7 @@ export const products = [
     author: "Shiv Khera",
     price: "15000",
     categoryName: "office",
+    stars: 5,
   },
   {
     _id: uuid(),
@@ -63,6 +68,7 @@ export const products = [
     author: "Shiv Khera",
     price: "1100",
     categoryName: "lounge",
+    stars: 4,
   },
   {
     _id: uuid(),
@@ -71,6 +77,7 @@ export const products = [
     author: "Shiv Khera",
     price: "10000",
     categoryName: "bedroom",
+    stars: 3.4,
   },
   {
     _id: uuid(),
@@ -80,6 +87,7 @@ export const products = [
     price: "1700",
     categoryName: "bedroom",
     featured: true,
+    stars: 4.7,
   },
   {
     _id: uuid(),
@@ -88,6 +96,7 @@ export const products = [
     author: "Shiv Khera",
     price: "1500",
     categoryName: "bedroom",
+    stars: 4.2,
   },
   {
     _id: uuid(),
@@ -97,6 +106,7 @@ export const products = [
     price: "2000",
     categoryName: "dining",
     featured: true,
+    stars: 3,
   },
   {
     _id: uuid(),
@@ -105,5 +115,6 @@ export const products = [
     author: "Shiv Khera",
     price: "1000",
     categoryName: "office",
+    stars: 4.6,
   },
 ];

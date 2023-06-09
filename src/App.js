@@ -19,6 +19,7 @@ import Header from "./components/header/Header";
 import Footer from "./components/footer/Footer";
 import ErrorPage from "./pages/Error/ErrorPage";
 import SingleProduct from "./pages/Home/components/SingleProduct";
+import Products from "./pages/Products/Products";
 
 
 function App() {
@@ -34,9 +35,9 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/login" element={<Login />} />
         <Route path="/mockman" element={<Mockman />} />
-        <Route path="/store" element={<Store />} />
-        {/* <Route path="/productdetail/:id" element={<ProductDetail />} /> */}
-        <Route path="/singleproduct/:id" element={<SingleProduct />} />
+        <Route path="/store" element={<Products />} />
+        <Route path="/productdetail/:id" element={<ProductDetail />} />
+        {/* <Route path="/singleproduct/:id" element={<SingleProduct />} /> */}
         <Route path="*" element={<ErrorPage />} />
 
         <Route
